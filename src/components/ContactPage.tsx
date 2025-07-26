@@ -43,7 +43,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
         {/* Geometric patterns */}
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern id="contactPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+            <pattern id="contactPattern" width="50" height="50" patternUnits="userSpaceOnUse">
               <circle cx="30" cy="30" r="2" fill="rgba(59, 130, 246, 0.1)"/>
               <circle cx="0" cy="0" r="1" fill="rgba(139, 92, 246, 0.08)"/>
               <circle cx="60" cy="60" r="1" fill="rgba(236, 72, 153, 0.08)"/>
