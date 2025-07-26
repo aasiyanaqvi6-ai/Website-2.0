@@ -3,6 +3,7 @@ import { Play, Pause, Volume2, VolumeX, Maximize, Home, Instagram, Mail } from '
 import FloatingIcons from "./components/FloatingIcons";
 import LoadingScreen from "./components/LoadingScreen";
 import ScrollAnimation from "./components/ScrollAnimations";
+import ContactPage from "./components/ContactPage";
 
 interface VideoPlayerProps {
   src: string;
@@ -203,13 +204,26 @@ const FloatingNavbar: React.FC = () => {
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [showContactPage, setShowContactPage] = useState(false);
 
   const handleLoadComplete = () => {
     setIsLoading(false);
   };
 
+  const handleShowContact = () => {
+    setShowContactPage(true);
+  };
+
+  const handleBackToPortfolio = () => {
+    setShowContactPage(false);
+  };
+
   if (isLoading) {
     return <LoadingScreen onLoadComplete={handleLoadComplete} />;
+  }
+
+  if (showContactPage) {
+    return <ContactPage onBack={handleBackToPortfolio} />;
   }
 
   const landscapeVideos = [
@@ -359,16 +373,7 @@ function App() {
                     View Work
                   </button>
                   <button 
-                    onClick={() => {
-                      const element = document.getElementById('contact');
-                      if (element) {
-                        element.scrollIntoView({ 
-                          behavior: 'smooth',
-                          block: 'start',
-                          inline: 'nearest'
-                        });
-                      }
-                    }}
+                    onClick={handleShowContact}
                     className="btn-enhanced btn-secondary-enhanced rounded-lg w-full sm:w-auto text-glow-white"
                   >
                     Contact Me
@@ -546,7 +551,10 @@ function App() {
                 </p>
               </ScrollAnimation>
               <ScrollAnimation animation="scale-in" delay={100}>
-                <button className="btn-enhanced btn-cta-enhanced rounded-lg mx-4 text-glow">
+                <button 
+                  onClick={handleShowContact}
+                  className="btn-enhanced btn-cta-enhanced rounded-lg mx-4 text-glow"
+                >
                   Start a Project
                 </button>
               </ScrollAnimation>
