@@ -299,7 +299,7 @@ function App() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
             style={{
-              backgroundImage: `url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+              backgroundImage: `url('https://pixflow.net/blog/wp-content/uploads/2023/12/Efficient-Video-Editing-Workflow.webp')`,
               filter: 'blur(1px) brightness(0.4) contrast(1.2)'
             }}
           />
