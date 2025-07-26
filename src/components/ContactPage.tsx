@@ -32,7 +32,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-800 to-black text-white relative overflow-hidden">
       {/* Geometric Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Large geometric shapes */}
