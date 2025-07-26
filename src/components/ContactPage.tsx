@@ -97,7 +97,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">aamir.naqvi@example.com</p>
+                    <p className="text-gray-600">aamirnaqvi03@example.com</p>
                   </div>
                 </div>
               </div>
@@ -109,7 +109,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-gray-600">+91 9760902522</p>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Location</h3>
-                    <p className="text-gray-600">Los Angeles, CA</p>
+                    <p className="text-gray-600">Uttar Pradesh, India</p>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                   <div className="text-sm text-gray-600 mt-1">Years Experience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-gray-900">24h</div>
+                  <div className="text-3xl font-bold text-gray-900">>24h</div>
                   <div className="text-sm text-gray-600 mt-1">Response Time</div>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl font-bold text-gray-900 mb-2">Start Your Project</h2>
-                  <p className="text-gray-600">Fill out the form below and I'll get back to you within 24 hours</p>
+                  <p className="text-gray-600">Fill out the form below and I'll get back to you in less then 24 hours</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
@@ -227,7 +227,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-gray-700 flex items-center space-x-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Timeline</span>
+                      <span>Deadline</span>
                     </label>
                     <select
                       name="timeline"
@@ -236,7 +236,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                       className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-300 bg-white/50"
                       required
                     >
-                      <option value="">Select timeline</option>
+                      <option value="">Select deadline</option>
                       <option value="asap">ASAP</option>
                       <option value="1-week">Within 1 week</option>
                       <option value="2-weeks">Within 2 weeks</option>
@@ -256,10 +256,10 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                     required
                   >
                     <option value="">Select budget range</option>
-                    <option value="under-1k">Under $1,000</option>
-                    <option value="1k-5k">$1,000 - $5,000</option>
-                    <option value="5k-10k">$5,000 - $10,000</option>
-                    <option value="10k-plus">$10,000+</option>
+                    <option value="under-1k">Under $100</option>
+                    <option value="1k-5k">$200 - $300</option>
+                    <option value="5k-10k">$400 - $500</option>
+                    <option value="10k-plus">$500+</option>
                     <option value="discuss">Let's discuss</option>
                   </select>
                 </div>
@@ -295,7 +295,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
                 <p className="text-gray-600 mb-6">
-                  Thank you for reaching out. I'll review your project details and get back to you within 24 hours.
+                  Thank you for reaching out. I'll review your project details and get back to you in less then 24 hours.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
