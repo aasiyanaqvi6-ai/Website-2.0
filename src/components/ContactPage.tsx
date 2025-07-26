@@ -139,7 +139,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                   <div className="text-sm text-gray-600 mt-1">Years Experience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold text-gray-900">>24h</div>
+                  <div className="text-3xl font-bold text-gray-900">24h</div>
                   <div className="text-sm text-gray-600 mt-1">Response Time</div>
                 </div>
               </div>
