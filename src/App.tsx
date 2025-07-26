@@ -294,8 +294,21 @@ function App() {
       
       {/* Hero Section */}
    <section id="home" className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#0a0a0f] via-[#0f1419] to-[#1a1a2e] text-white">
+        {/* Background Editor Image */}
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15"
+            style={{
+              backgroundImage: `url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+              filter: 'blur(1px) brightness(0.4) contrast(1.2)'
+            }}
+          />
+          {/* Overlay to blend with gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a0f]/80 via-[#0f1419]/70 to-[#1a1a2e]/80"></div>
+        </div>
+        
         {/* Sophisticated Small Grid Background */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 z-10">
           <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -314,12 +327,12 @@ function App() {
         </div>
       <FloatingIcons />
         {/* Deep Blue Blur Orbs */}
-        <div className="absolute top-1/4 left-[85%] w-80 h-80 bg-[#1e40af]/40 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-[85%] w-96 h-96 bg-[#1e3a8a]/30 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-[#3730a3]/25 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-[85%] w-80 h-80 bg-[#1e40af]/30 rounded-full blur-3xl z-20"></div>
+        <div className="absolute bottom-1/4 right-[85%] w-96 h-96 bg-[#1e3a8a]/25 rounded-full blur-3xl z-20"></div>
+        <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-[#3730a3]/20 rounded-full blur-3xl z-20"></div>
         
         <div className="container mx-auto px-8 py-20">
-          <div className="relative z-10">
+          <div className="relative z-30">
             {/* Hero Content */}
             <ScrollAnimation animation="fade-up" delay={50}>
               <div className="text-center mb-8 md:mb-15">
@@ -367,7 +380,7 @@ function App() {
             {/* Showreel */}
             <ScrollAnimation animation="scale-in" delay={100}>
               <div className="max-w-6xl mx-auto">
-                <div className="relative z-10 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-12 shadow-2xl bg-gradient-to-br from-[#1e3a8a]/20 via-[#1e40af]/15 to-[#3730a3]/20">
+                <div className="relative z-30 backdrop-blur-xl border border-white/10 rounded-3xl p-6 md:p-12 shadow-2xl bg-gradient-to-br from-[#1e3a8a]/30 via-[#1e40af]/25 to-[#3730a3]/30">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-white px-10 text-glow-purple">Showreel</h2>
                   <VideoPlayer
                     src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
