@@ -300,7 +300,7 @@ function App() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
             style={{
               backgroundImage: `url('https://i.ibb.co/SDm5Vcfn/Firefly-20250726064723-1.png')`,
-              filter: 'blur(1px) brightness(0.4) contrast(1.2)'
+              filter: 'blur(1px) brightness(0.4) contrast(1
             }}
           />
           {/* Overlay to blend with gradient */}
