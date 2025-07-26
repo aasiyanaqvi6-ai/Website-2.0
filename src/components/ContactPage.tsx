@@ -12,7 +12,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
     phone: '',
     projectType: '',
     budget: '',
-    timeline: '',
+    deadline: '',
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
